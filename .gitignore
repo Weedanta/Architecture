@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# macOS / Google Drive
+.DS_Store
+Icon?
+.tmp.drivedownload/
+.tmp.driveupload/
