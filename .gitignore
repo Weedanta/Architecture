@@ -6,6 +6,9 @@ __pycache__/
 venv/
 env/
 
+# Secrets
+.env
+
 # macOS / Google Drive
 .DS_Store
 Icon?

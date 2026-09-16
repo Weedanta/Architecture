@@ -11,15 +11,29 @@ import os
 import time
 import sys
 
+# Muat kredensial dari file .env di folder yang sama (tanpa dependency tambahan)
+def load_dotenv(path=None):
+    path = path or os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.exists(path):
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, _, value = line.partition("=")
+                os.environ.setdefault(key.strip(), value.strip())
+
+load_dotenv()
+
 # Inisialisasi broker MQTT - HiveMQ Cloud (cluster pribadi, butuh TLS + auth)
 broker = "fec429b2a5b94f3096cda8a658769824.s1.eu.hivemq.cloud"
 port = 8883  # Port TLS MQTT
 
-# Kredensial diambil dari environment variable (jangan hardcode di source code)
+# Kredensial diambil dari file .env / environment variable (jangan hardcode di source code)
 username = os.environ.get("MQTT_USERNAME")
 password = os.environ.get("MQTT_PASSWORD")
 if not username or not password:
-    print("Set environment variable MQTT_USERNAME dan MQTT_PASSWORD terlebih dahulu.")
+    print("Set MQTT_USERNAME dan MQTT_PASSWORD di file .env atau environment variable.")
     sys.exit(1)
 
 # Inisialisasi topik dan pesan suhu
