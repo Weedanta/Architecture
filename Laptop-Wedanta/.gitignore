@@ -1,0 +1,10 @@
+# kredensial dari dosen - JANGAN di-commit
+.env
+MQTT/.env
+*.env.local
+# lokal per laptop
+.laptop
+__pycache__/
+*.pyc
+.venv/
+venv/
