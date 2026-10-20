@@ -1,7 +1,0 @@
-paho-mqtt>=2.0,<3
-requests>=2.28
-flask>=2.2
-psutil>=5.9
-ntplib>=0.4
-pandas>=1.5
-matplotlib>=3.6

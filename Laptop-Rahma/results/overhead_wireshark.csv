@@ -1,7 +1,0 @@
-protocol,condition,total_capture_bytes,message_count,bytes_per_message,notes
-rest,lan,,,,
-rest,wifi,,,,
-rest,limited,,,,
-mqtt,lan,,,,
-mqtt,wifi,,,,
-mqtt,limited,,,,
