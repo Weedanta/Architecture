@@ -1,0 +1,6 @@
+paho-mqtt>=2.0
+requests
+flask
+psutil
+pandas
+matplotlib
