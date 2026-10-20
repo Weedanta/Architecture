@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sensor Suhu Terdistribusi: MQTT vs REST
 
 Kode praktikum Sistem Terdistribusi, dimodifikasi dari kode dosen sesuai Langkah 1 LKM.
@@ -42,3 +43,44 @@ Kolom LKM (`timestamp_iso, node_id, protocol, t_send_ms, t_recv_ms, payload_byte
 ditambah `exp` (label kondisi), `run`, `status`, dan `rtt_ms`.
 Latensi utama memakai RTT sehingga tidak bergantung pada sinkronisasi jam;
 latensi satu arah (`oneway`) juga dihitung untuk dipakai jika jam sudah tersinkron.
+=======
+# Sistem Terdistribusi (Distributed Systems)
+
+Repositori ini memuat tugas dan implementasi untuk mata kuliah **Sistem Terdistribusi**.
+
+---
+
+## 👥 Anggota Kelompok
+
+| No | Nama Lengkap | NIM |
+|:--:|:-------------|:---:|
+| 1 | **Rahma Aliyyah** | `2646000119` |
+| 2 | **Johan Arizona** | `2646000125` |
+| 3 | **Nofa Nisrina Salsabila** | `2646000117` |
+| 4 | **Ketut Bagus Wedanta A.M.** | `2646000123` |
+
+---
+
+## 🌿 Struktur Branch & Repositori
+
+Branch `main` ini difungsikan khusus sebagai halaman informasi kelompok dan dokumentasi repositori.
+
+Seluruh kode program, kode tugas, serta implementasi materi dari masing-masing anggota berada di **branch masing-masing**.
+
+### Cara Berpindah ke Branch Terkait
+
+Untuk melihat maupun menjalankan implementasi kode, silakan beralih ke branch yang bersangkutan:
+
+```bash
+# Melihat daftar seluruh branch yang ada
+git branch -a
+
+# Berpindah ke branch yang diinginkan
+git switch <nama-branch>
+# atau
+git checkout <nama-branch>
+```
+
+---
+*Fakultas Ilmu Komputer (FILKOM) — Universitas Brawijaya*
+>>>>>>> 24411e3ddec592b78ca355d138be39b8acde6116
